@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #00321E;
+    background-color: #fff;
+}
+
+p {
+    line-height: 20px;
+
+}
+
+h2 {
+    font-family: 'Secular One', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: rgb(164, 28, 218);
+}
+
+.hidden {
+    display: none;
+}
+
+
+#siteContainer {
+    margin: 0 auto;
+    width: 960px;
+}
+
+#header {
+    width: 960px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: #00321E;
+    
+}
+
+#logo {
+    width: 250px;
+    height: 70px;
+    margin: 15px 0 15px 20px;
+    display: flex;
+}
+
+
+#mainNav {
+    display: flex;
+}
+#mainNav ul{
+    text-transform: uppercase;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+#mainNav ul li {
+    margin: auto;
+}
+
+#mainNav ul li a {
+    display: block;
+    width: 100px;
+    color: #fff;
+    background-color: inherit;
+    margin-left: 10px;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.heroImg {
+    width: 960px;
+    display: flex;
+    
+}
+
+#intro {
+    margin: 40px 0;
+    padding: 40px 0;
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#intro h2 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#intro p {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    width: 700px;
+    margin: auto;
+}
+
+.photo {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+.introText {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 30px auto;
+}
+
+.member {
+    display: flex;
+    margin: 0 20px;
+}
+  
+
+
+
+
+
