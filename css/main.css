@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+
+
+/* ----- default styles ----- */
+.hidden {
+	display: none;
+}
+
+body {
+	background-color:#fff;
+	font-size:16px;
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-family: 'Amatic SC', cursive;
+	color: #00321E;
+	font-size: 2em;
+    margin: 10px;
+}
+
+main {
+	position:relative;
+	width:100%;
+	text-align:center;
+	top:30px;
+}
+
+#imageContainer {
+	width:350px;
+	height:350px;
+	background-color:grey;
+	margin:0 auto;
+	overflow:hidden;
+	margin: 40px auto;
+}
+
+#images { position:relative; width:4000px; transition: all 1.5s; }
+#images img { float:left; }
+
+
+
+#navList {
+    padding: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+#navList li {
+	display:inline;
+	list-style-type:none;
+	padding:0px 10px;
+	cursor:pointer;
+}
+
+/* ----- end default styles ----- */
+
+/* ----- image sprite ----- */
+.iconContainer {
+	width: 100px;
+	height: 100px;
+	display:inline-block;
+	overflow:hidden;
+	background-image:url(../images/photos.png);
+	background-repeat:no-repeat;
+	
+	transition:transform .3s;
+	-webkit-transition:-webkit-transform .3s;
+	-moz-transition:-moz-transform .3s;
+}
+
+.alexandra { background-position:0px -100px; }
+.alexandra:hover { background-position:0px 0px; }
+
+.jacob { background-position:-100px -100px; }
+.jacob:hover { background-position:-100px 0px; }
+
+
+/* ----- end image sprite ----- */
+
+/* ----- classes for transitions ----- */
+
+.scaleUp {
+	-moz-transform:scale(1.7, 1.7);
+	-webkit-transform:scale(1.7, 1.7);
+	transform:scale(1.7, 1.7);
+}
+
+.scaleHalfUp {
+	-moz-transform:scale(1.2, 1.2);
+	-webkit-transform:scale(1.2, 1.2);
+	transform:scale(1.2, 1.2);
+}
+
+
+.memberInfo {
+  color: #00321E;
+  font-size: 1.3em;
+  line-height: 1.5;
+  width: 70%;
+  padding-top: 24px;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+img, embed, object, video {
+    max-width: 100%;
+}
+
+.header {
+	background-color: #00321E;
+    padding: 30px;
+	display: flex;
+	flex-direction: row;
+}
+
+.logo {
+    width: 150px;
+    display: flex;
+}
+
+.main {
+	display: flex;
+	max-width: 960px;
+	flex-direction: column;
+	margin: auto;
+    background-image:url(../images/texture.jpeg);
+	background-repeat: 1;
+	background-position:center center;
+}
+
+.nav {
+	display: flex;
+	float: right;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+	float: right;
+
+}
+
+.nav ul li a {
+	display: block;
+    width: 100px;
+    color: #fff;
+    background-color: inherit;
+    margin-left: 10px;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+	text-decoration: none;
+}
+
+.heroImg {
+    display: flex;
+}
+
+.footer {
+    background-color: #00321E;
+    height: 100px;
+    width: 960px;
+}
+
