@@ -1,68 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Secular+One&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Team Page</title>
+<link href="css/meyerReset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div id="siteContainer">
-        <h1 class="hidden">Old Spice Home Page</h1>
-        <header id="header">
-            <div id="logo">
-                <img src="https://via.placeholder.com/250x80" alt="">
-            </div>
-            <nav id="mainNav">
-                <h2 class="hidden">Main Navigation</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Beers You Love</a></li>
-                    <li><a href="#">News Room</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="heroImg">
-            <h2 class="hidden">Hero Image</h2>
-            <img src="https://via.placeholder.com/960x400" alt="Big promo image">
+  <main class="main">
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.svg" alt="logo">
+        </div>
+        <nav class="nav">
+            <h2 class="hidden">Main Navigation</h2>
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="index.html">ABOUT</a></li>
+                <li><a href="index.html">BEERS YOU LOVE</a></li>
+                <li><a href="index.html">NEWS ROOM</a></li>
+                <li><a href="index.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+   
+    </header>
+    <section class="heroImg">
+
+      <h2 class="hidden">Hero Image</h2>
+        <img src="images/scene2.jpg" alt="Big promo image">
+            
+    </section>
+    <section id="imageContainer">
+    	<div id="images" style="right: 0">
+    		<img src="images/photo.jpg"/>
+    		<img src="images/carlsberg.jpg"/>
+
+        </div>
+    </section>
+
+    <nav id="bottomNav">
+    	<ul id="navList">
+            <li>
+              <div class="iconContainer alexandra" data-offset="0"></div>
+            </li>
+            <li><div class="iconContainer jacob" data-offset="1"></div></li>
+        </ul>
+    </nav>
+
+    <h1 id="name">Find out about our team members</h1>
+    <p class="memberInfo"></p>
+
+    <section class="heroImg">
+      <h2 class="hidden">Hero Image</h2>
+        <img src="images/scene.jpg" alt="Big promo image">
+            
+    </section>
+
+    <footer>
+        <section class="footer">
+            
         </section>
-        <section id="intro">
-            <h2 class="hidden">Welcoming Statement</h2>
-            <div class="photo">
-                <img src="https://via.placeholder.com/350x350" alt="">
-            </div>
-            <div class="introText">
-                <h2>Our Team</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia voluptate cumque at delectus nihil ad esse? Porro ipsum nemo corrupti itaque fuga, deleniti unde dolor voluptas aperiam velit iste impedit!</p>
-                <div class="buttons">
-                    <div class="member">
-                        <img src="https://via.placeholder.com/100x100" alt="">
-                    </div>
-                    <div class="member">
-                        <img src="https://via.placeholder.com/100x100" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        
+    </footer>
+</main>
 
-
-
-        <section class="heroImg">
-            <h2 class="hidden">Hero Image</h2>
-            <img src="https://via.placeholder.com/960x400" alt="Big promo image">
-        </section>
-        
-
-
-    </div>
-    <script src="js/main.js"></script>  
+<script src="js/main.js"></script>
 </body>
 </html>

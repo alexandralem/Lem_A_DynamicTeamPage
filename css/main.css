@@ -1,77 +1,153 @@
 @charset "UTF-8";
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #00321E;
-    background-color: #fff;
-}
 
-p {
-    line-height: 20px;
 
-}
-
-h2 {
-    font-family: 'Secular One', sans-serif;
-    font-size: 25px;
-    line-height: 30px;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover, a:active {
-    color: rgb(164, 28, 218);
-}
-
+/* ----- default styles ----- */
 .hidden {
-    display: none;
+	display: none;
+}
+
+body {
+	background-color:#fff;
+	font-size:16px;
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-family: 'Amatic SC', cursive;
+	color: #00321E;
+	font-size: 2em;
+    margin: 10px;
+}
+
+main {
+	position:relative;
+	width:100%;
+	text-align:center;
+	top:30px;
+}
+
+#imageContainer {
+	width:350px;
+	height:350px;
+	background-color:grey;
+	margin:0 auto;
+	overflow:hidden;
+	margin: 40px auto;
+}
+
+#images { position:relative; width:4000px; transition: all 1.5s; }
+#images img { float:left; }
+
+
+
+#navList {
+    padding: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+#navList li {
+	display:inline;
+	list-style-type:none;
+	padding:0px 10px;
+	cursor:pointer;
+}
+
+/* ----- end default styles ----- */
+
+/* ----- image sprite ----- */
+.iconContainer {
+	width: 100px;
+	height: 100px;
+	display:inline-block;
+	overflow:hidden;
+	background-image:url(../images/photos.png);
+	background-repeat:no-repeat;
+	
+	transition:transform .3s;
+	-webkit-transition:-webkit-transform .3s;
+	-moz-transition:-moz-transform .3s;
+}
+
+.alexandra { background-position:0px -100px; }
+.alexandra:hover { background-position:0px 0px; }
+
+.jacob { background-position:-100px -100px; }
+.jacob:hover { background-position:-100px 0px; }
+
+
+/* ----- end image sprite ----- */
+
+/* ----- classes for transitions ----- */
+
+.scaleUp {
+	-moz-transform:scale(1.7, 1.7);
+	-webkit-transform:scale(1.7, 1.7);
+	transform:scale(1.7, 1.7);
+}
+
+.scaleHalfUp {
+	-moz-transform:scale(1.2, 1.2);
+	-webkit-transform:scale(1.2, 1.2);
+	transform:scale(1.2, 1.2);
 }
 
 
-#siteContainer {
-    margin: 0 auto;
-    width: 960px;
+.memberInfo {
+  color: #00321E;
+  font-size: 1.3em;
+  line-height: 1.5;
+  width: 70%;
+  padding-top: 24px;
+  margin: 0 auto 40px;
+  text-align: left;
 }
 
-#header {
-    width: 960px;
-    height: 100px;
+img, embed, object, video {
+    max-width: 100%;
+}
+
+.header {
+	background-color: #00321E;
+    padding: 30px;
+	display: flex;
+	flex-direction: row;
+}
+
+.logo {
+    width: 150px;
+    display: flex;
+}
+
+.main {
+	display: flex;
+	max-width: 960px;
+	flex-direction: column;
+	margin: auto;
+    background-image:url(../images/texture.jpeg);
+	background-repeat: 1;
+	background-position:center center;
+}
+
+.nav {
+	display: flex;
+	float: right;
+}
+
+.nav ul{
     display: flex;
     flex-direction: row;
-    background-color: #00321E;
-    
+	float: right;
+
 }
 
-#logo {
-    width: 250px;
-    height: 70px;
-    margin: 15px 0 15px 20px;
-    display: flex;
-}
-
-
-#mainNav {
-    display: flex;
-}
-#mainNav ul{
-    text-transform: uppercase;
-    margin-top: 0;
-    display: flex;
-    flex-direction: row;
-    
-    
-}
-
-#mainNav ul li {
-    margin: auto;
-}
-
-#mainNav ul li a {
-    display: block;
+.nav ul li a {
+	display: block;
     width: 100px;
     color: #fff;
     background-color: inherit;
@@ -80,62 +156,16 @@ a:hover, a:active {
     padding: 8px;
     font-size: 16px;
     font-weight: 600;
+	text-decoration: none;
 }
 
 .heroImg {
+    display: flex;
+}
+
+.footer {
+    background-color: #00321E;
+    height: 100px;
     width: 960px;
-    display: flex;
-    
 }
-
-#intro {
-    margin: 40px 0;
-    padding: 40px 0;
-    width: 960px;
-    display: flex;
-    flex-direction: column;
-}
-
-
-#intro h2 {
-    font-weight: 600;
-    font-size: 30px;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-#intro p {
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    width: 700px;
-    margin: auto;
-}
-
-.photo {
-    display: flex;
-    width: 350px;
-    height: 350px;
-    margin: auto;
-}
-.introText {
-    display: flex;
-    flex-direction: column;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: row;
-    margin: 30px auto;
-}
-
-.member {
-    display: flex;
-    margin: 0 20px;
-}
-  
-
-
-
-
 
