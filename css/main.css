@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-
-
-/* ----- default styles ----- */
 .hidden {
 	display: none;
 }
@@ -58,9 +55,6 @@ main {
 	cursor:pointer;
 }
 
-/* ----- end default styles ----- */
-
-/* ----- image sprite ----- */
 .iconContainer {
 	width: 100px;
 	height: 100px;
@@ -80,10 +74,6 @@ main {
 .jacob { background-position:-100px -100px; }
 .jacob:hover { background-position:-100px 0px; }
 
-
-/* ----- end image sprite ----- */
-
-/* ----- classes for transitions ----- */
 
 .scaleUp {
 	-moz-transform:scale(1.7, 1.7);
